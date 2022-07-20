@@ -1,0 +1,318 @@
+body{
+	margin: 0px;
+	height: 0px;
+	/* background-color: white; */
+
+}
+html{
+	background-image: url('./images/bgg.jpeg');;
+    background-size: cover;
+}
+/**************Nightmode**************/
+.container h3,#live-stream-box h3{
+	color: black;
+}
+
+::-webkit-scrollbar{
+	width: 7px;
+	height: 10px;
+	background-color: grey;
+}
+::-webkit-scrollbar-thumb{
+	background-color: black;
+}
+/**************left-container************/
+.left-container{
+	float: left;
+	height: 8000px;
+	width: 200px;
+	position: relative;
+	top: 80px;
+    background-color: black;
+}
+.carousel{
+	border: 5px solid wheat;
+}
+#logo img{
+	height: 60px;
+	margin-left: 60px;
+	margin-right: 115px;
+}
+#nav-btn{
+	text-align: center;
+}
+#nav-btn a{
+	width: 100%;
+	text-decoration: none;
+	font-size: 15px;
+	color: white;
+	float: left;
+	margin-bottom: 10px;
+	padding: 10px 25px 10px 25px;
+	transition-duration: .5s;
+}
+#nav-btn a:hover{
+	background-color: #212626;
+	cursor: pointer;
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 50px;
+}
+#top-nav{
+	width: 100%;
+	position: fixed;
+	height: 80px;
+	z-index: 2;
+	background-color: #14141a;
+}
+#top-nav a{
+	color: white;
+	transition-duration: .5s;
+}
+#top-nav a:hover{
+	color: red;
+}
+#top-nav li{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	transition-duration: .5s;
+	border-radius: 2px;
+}
+#top-nav li:hover{
+	background-color: black;
+}
+
+#search input{
+	height:40px;
+	width: 60px;
+	background-color: transparent;
+	border: none;
+	color: white;
+}
+#search input:focus{
+	width: 250px;
+
+}
+#search img{
+	margin-top: 5px;
+	position: relative;
+	left: -50px;
+	z-index: -1;
+}
+#logout-icon{
+	text-decoration: none;
+}
+#notif{
+	height:30px;
+}
+#notif:hover{
+	cursor: pointer;
+}
+#profile{
+	margin-top: 5px;
+	margin-left: 20px;
+	height: 30px;
+	border-radius: 20px;
+}
+#profile:hover{
+	cursor: pointer;
+}
+#profile-button{
+	margin-right: 10px;
+	background-color: transparent;
+	border: none;
+	z-index: -2;
+}
+#profile-button:hover{
+	background-color: #262626;
+}
+
+/************** live-stream***********/
+#live-stream-box{
+	width: 65.8%;
+	margin: auto;
+	position: relative;
+	top: 100px;
+	left: 100px;
+	border-radius: 5px;
+}
+
+#live-stream-box h3{
+	text-align: center;
+	margin-bottom: 0px;
+	font-size: 35px;
+}
+
+#vid{
+	top: 15px;
+}
+#vid2{
+	top: 15px;
+}
+#vid2,#vid{
+	width: 100%;
+}
+.live1-container{
+	height: 500px;
+	width: 100%;
+}
+
+.live2-container{
+	height: 500px;
+	width: 100%;
+}
+/************** video ****************/
+.container{
+	margin-top: 120px;
+
+}
+.vid,.vid2{
+	width: 300px;
+}
+
+.vid2 img{
+	height: 120px;
+	border: 5px solid white;
+	transition-duration: .2s;
+
+}
+.vid2 img:hover{
+	cursor: pointer;
+	margin-left: -10px;
+}
+
+
+.vid img{
+	height: 180px;
+	border: 7px solid white;
+	transition-duration: .2s;
+}
+.vid img:hover{
+	cursor: pointer;
+	margin-top: -20px;
+}
+.container h3{
+	position: relative;
+	left: 120px;
+}
+.row{
+	position: relative;
+	left: 150px;
+}
+/**********carousel-container*********/
+
+/**********footer*********************/
+.footer{
+	background-color: #17171a;
+	height: 200px;
+	width: 100%;
+	position: relative;
+	top: 45px;
+	z-index: -2;
+	text-align: center;
+}
+.footer div{
+	position: relative;
+	top: 20px;
+}
+.footer a{
+	text-decoration: none;
+	color: white;
+	padding: 10px;
+}
+
+/********** media-queries ************/
+
+@media(max-width: 1440px){
+	.row,.container h3{
+		position: relative;
+		left: 150px;
+	}
+	.container h3{
+		margin-top: 50px;
+	}
+}
+
+@media(max-width: 1149px){
+
+}
+@media(max-width: 1131px){
+	.row2{
+		
+	}
+	#live-stream-box{
+		width: 53%;
+		margin-left: 220px;
+	}
+
+}
+@media(max-width: 1024px){
+	#search input{
+		width: 200px;
+	}
+	#live-stream-box{
+		width: 75%;
+		position: relative;
+		left: 10px;
+	}
+	.row,.container h3{
+		position: relative;
+		left: 100px;
+	}
+}
+@media(max-width: 999px){
+	.search-box input,.search-box button{
+		display: none;
+	}
+}
+@media(max-width: 991px){
+	.row2{
+	display: none;			
+	}
+	.row{
+
+	}
+}
+@media(max-width: 904px){
+	#live-stream-box{
+		width: 70%;
+	}
+	.vid img{
+		height: 120px;
+		width: 200px;
+	}
+	.row,.container h3{
+		position: relative;
+		left: 70px;
+	}
+	.vid{
+		width: 200px;
+	}
+}
+
+@media(max-width: 768px){
+	.left-container{
+		width: 170px;
+	}
+	.carousel{
+		width: 90%;
+	}
+	.row,.container h3{
+		position: relative;
+		left: 50px;
+	}	
+}
+@media(max-width: 425px){
+	#vid2,#vid{
+		width: 100%;
+	}
+	.live1-container{
+		width: 100%;
+	}
+
+}
+@media(max-width: 320px){
+	.row,.container h3{
+		position: relative;
+		left: 20px;
+	}
+}
