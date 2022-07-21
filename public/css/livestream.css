@@ -501,7 +501,7 @@ body.vjs-full-window {
   width: 3em;
   display: block;
   position: absolute;
-  top: 250px;
+  top: 200px;
   left: 600px;
   padding: 0;
   cursor: pointer;
@@ -1806,7 +1806,7 @@ body {
     color: #000000;
     font-weight: 10;
     background-color: #000000;
-    height: %;
+    /* height: %; */
     
 }
 
