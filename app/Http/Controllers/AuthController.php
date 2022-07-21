@@ -19,8 +19,8 @@ class AuthController extends Controller
         return view ("auth.login");
     }
 
-    public function dashboard() {
-        return view('dashboard');
+    public function home() {
+        return view('home');
     }
     
     public function email() {
@@ -80,7 +80,7 @@ class AuthController extends Controller
             //     'message' => 'Bad Creds'
             // ], 401);
         } else {
-            return redirect('dashboard');
+            return redirect('home');
         }
 
         $token = $user->createToken('myapptoken')->plainTextToken;
@@ -90,8 +90,7 @@ class AuthController extends Controller
             'token' => $token
         ];
 
-        //return response($response, 201);
-       
+        //return response($response, 201);  
     }
     
     // Logout

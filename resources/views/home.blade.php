@@ -12,13 +12,56 @@
 
 
 </head>
-
-<script>
-    body {
-        
-    }
-</script>
 <body>
+
+		<!-----------NavBar------------->
+	<nav id="top-nav"class="navbar navbar-expand-lg ">
+	  <div class="container-fluid">
+		<div id="logo">
+			<img  class=""src="./images/logo2.png">
+		</div>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		      <ul id="top-nav-btn" class="navbar-nav me-auto mb-2 mb-lg-0" style="float: right;">
+			        <li class="nav-item fs-5 px-4 ">
+			          <a class="nav-link active text-danger border-bottom" aria-current="page" href="{{ url('home') }}">Home</a>
+			        </li>
+			        <li class="nav-item fs-5 px-4">
+			          <a class="nav-link" href="#">Movies</a>
+			        </li>
+			        <li class="nav-item fs-5 px-4">
+			          <a class="nav-link" href="{{ url('livestream') }}">Live</a>
+			        </li>
+		      </ul>
+			      <form id="search"class="search-box search-form d-flex" role="search">
+				       <input class="form-control me-2" type="search"  placeholder="" aria-label="Search">
+				      	<img src="./icons/search-icon.png" style="height:30px">
+			      </form>
+			 <div class="dropdown">
+			  <button id="profile-button"class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+				 <img id="notif"src="./icons/notif.png">
+			  </button>
+			  
+			  <ul class="dropdown-menu">
+			  	<li>New releases</li>
+			  	<li>New releases</li>
+			  	<li>New releases</li>
+			  	<li>New releases</li>
+			  </ul>
+			</div>
+			 <div class="dropdown">
+			  <button id="profile-button"class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+				 <img id="profile"src="./icons/profile.png">
+			  </button>
+			  <ul class="dropdown-menu">
+		  	 	<a id="logout-icon" class="px-4 text-dark" href=""></i>Log out</a>
+			  </ul>
+			</div>
+		  </div>
+	  </div>
+	</nav>
 	<!-----------Left-Container------------->
 	<div class="left-container">
 		<div id="nav-btn"><a href="#action">Action</a></div>
@@ -35,51 +78,7 @@
 		<div id="nav-btn"><a href="">Thrillers</a></div>
 		
 	</div>
-	<!-----------NavBar------------->
-	<nav id="top-nav"class="navbar navbar-expand-lg ">
-	  <div class="container-fluid">
-		<div id="logo"><img  class=""src="./images/logo2.png"></div>
-	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-	      <span class="navbar-toggler-icon"></span>
-	    </button>
-	    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-		      <ul id="top-nav-btn" class="navbar-nav me-auto mb-2 mb-lg-0" style="float: right;">
-			        <li class="nav-item fs-5 px-4 ">
-			          <a class="nav-link active text-danger border-bottom" aria-current="page" href="#">Home</a>
-			        </li>
-			        <li class="nav-item fs-5 px-4">
-			          <a class="nav-link" href="#">Movies</a>
-			        </li>
-			        <li class="nav-item fs-5 px-4">
-			          <a class="nav-link" href="file:///C:/Users/ADMIN/Desktop/Netflix/livepage.html#">Live</a>
-			        </li>
-		      </ul>
-			      <form id="search"class="search-box search-form d-flex" role="search">
-				       <input class="form-control me-2" type="search"  placeholder="" aria-label="Search">
-				      	<img src="./icons/search-icon.png" style="height:30px">
-			      </form>
-			 <div class="dropdown">
-			  <button id="profile-button"class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-				 <img id="notif"src="./icons/notif.png">
-			  </button>
-			  <ul class="dropdown-menu">
-			  	<li>New releases</li>
-			  	<li>New releases</li>
-			  	<li>New releases</li>
-			  	<li>New releases</li>
-			  </ul>
-			</div>
-			 <div class="dropdown">
-			  <button id="profile-button"class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-				 <img id="profile"src="./icons/profile.png">
-			  </button>
-			  <ul class="dropdown-menu">
-		  	 	<a id="logout-icon" class="px-4 text-dark" href=""></i>Log out</a>
-			  </ul>
-			</div>
-	    </div>
-	  </div>
-	</nav>
+	
 	
 	<!-----------Live-Stream-Container------------->
 	<div id="live-stream-box">

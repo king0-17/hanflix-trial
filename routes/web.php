@@ -20,8 +20,16 @@ Route::get('/', function () {
     return view('landing');
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth','verified'])->name('dashboard');
+Route::get('/livestream', function () {
+    return view('livestream');
+});
+
+Route::get('/livestream2', function() {
+    return view('livestream2');
+});
+
+Route::get('/login', function () {
+    return view('login');
+})->middleware(['auth','verified'])->name('login');
 
 require __DIR__.'/auth.php';
