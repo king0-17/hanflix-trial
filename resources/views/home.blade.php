@@ -56,7 +56,7 @@
 				 <img id="profile"src="./icons/profile.png">
 			  </button>
 			  <ul class="dropdown-menu">
-		  	 	<a id="logout-icon" class="px-4 text-dark" href=""></i>Log out</a>
+		  	 	<a id="logout-icon" class="px-4 text-dark" href="logout"></i>Log out</a>
 			  </ul>
 			</div>
 		  </div>
