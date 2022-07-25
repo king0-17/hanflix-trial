@@ -38,7 +38,7 @@
 
             <div id="buttonss">
                 <a href="{{ url('livestream') }}" class="previous round">&#8249;</a>
-                <a href="{{ url('livestream2') }}" class="next round">&#8250;</a>
+                <a href="{{ url('livestream') }}" class="next round">&#8250;</a>
             </div>
 
         </div>

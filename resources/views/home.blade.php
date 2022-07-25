@@ -97,7 +97,7 @@
 						<div id="vid"></div>
 						<script>
 						player = new Clappr.Player({
-						source: "http://alpharlive.mmdlive.lldns.net/alpharlive/da0d6106b029413eb79b191898108361/manifest.m3u8?p=36&h=eb52a55d9ee444e619f89c831ece44a9",
+						source: "http://alpharlive.mmdlive.lldns.net/alpharlive/55bbc1d8a2a64f6f89a7921fc23704a2/manifest.m3u8?p=36&h=c68a6b9a919ee84911ffad55c54458ff",
 						mimeType: "application/x-mpegURL",
 						autoPlay: true, 
 						height: "500",
